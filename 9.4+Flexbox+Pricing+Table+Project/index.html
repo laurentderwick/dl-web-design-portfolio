@@ -12,9 +12,65 @@
       body {
         font-family: "Sono", sans-serif;
       }
+      .pricing-container {
+        display: flex;
+       flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px solid #ccccccc0;
+    
+      }
+      .pricing-plan {
+      flex: 1;
+      max-width: 400px;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      text-align: center;
+    }
+      
+      .plan-title, .plan-price {
+        text-align: center;
+        font-weight: 700;
+      }
+
+      .plan-title {
+        font-size: 0.8em;
+        margin-top: 20px; /* Spacing between title and border*/
+      }
+      .plan-price {
+        font-size: 1.8em;
+        margin: 10px 0; /* Spacing between price and title/features */
+      }
+      .plan-features {
+         list-style-type: none; 
+          font-weight: 200;
+          font-size: smaller;
+          /* Disable default list styling  (bullet Points rmeoval) */
+      }
+
+      .plan-button {              /* Styling all sign up buttons from each pricing plan class(Box)*/
+        color: white;
+        background-color: coral;
+        border: none;
+        padding: 10px 10px;
+        border-radius: 7px;
+        cursor: pointer;
+        margin: 20px auto;
+        padding: auto;
+        display: flex
+      
+         /* Center the button horizontally and add spacing from features */
+      }
+
+       
+
+
 
       /* Hint: What can you do with a media query and flexbox? */
-      @media (max-width: 1250px) {
+      @media  (max-width: 1250px) {
+       
       }
     </style>
   </head>
